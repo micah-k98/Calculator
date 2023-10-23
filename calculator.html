@@ -9,14 +9,16 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Calculator</a>
+          <a class="navbar-brand" href="index.html">Calculator</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" href="calculator.html">Simple Calculator</a>
+                <a class="nav-link active" href="#">Simple Calculator
+                  <span class="visually-hidden">(current)</span>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="f-to-c.html">Fahrenheit to Celsius</a>
@@ -38,14 +40,35 @@
       </nav>
 
     <main class="container mt-5 d-flex justify-content-center">
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo libero odio animi blanditiis autem possimus sapiente deleniti, maiores aut commodi dolore nihil officiis at quo nobis temporibus quia. Numquam, nemo.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ut vitae eum nisi, omnis eveniet dolorem facere veritatis optio exercitationem nihil excepturi culpa explicabo quam. Vel labore vitae voluptas expedita?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit numquam obcaecati soluta maxime cupiditate sapiente, architecto dolor sequi ipsum, non dignissimos asperiores deserunt adipisci harum. Nostrum similique a eligendi repudiandae.
-        </p>
+        <form action="index.html" class="col-6 text-center p-4 border border-dark-subtle">
+            <div class="form-group m-3" >
+                <label for="number1Field">Number 1:</label>
+                <input type="text" id="number1Field" value="" class="ms-2">
+            </div>
 
-        
+            <div class="form-group m-3">
+                <label for="number2Field">Number 2:</label>
+                <input type="text" id="number2Field" value="" class="ms-2">
+            </div>
+
+            <div class="form-group m-3">
+                <input type="button" id="addButton" value="Add">
+                <input type="button" id="subtractButton" value="Subtract">
+                <input type="button" id="multiplyButton" value="Multiply">
+                <input type="button" id="divideButton" value="Divide">
+            </div>
+
+            <div class="form-group m-3">
+                <label for="answerField">Answer:</label>
+                <input type="text" id="answerField" value="" class="ms-2" readonly>
+            </div>
+
+            <input type="button" id="clearButton" value="Clear">
+
+        </form>
+
+        <script src="scripts/calculator.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
