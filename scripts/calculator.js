@@ -15,9 +15,9 @@ function init() {
     
     document.getElementById("subtractButton").onclick = onSubtractButtonClicked;
    
-    document.getElementById("multiplyButton.onclick").onclick = onMultiplyButtonClicked;
+    document.getElementById("multiplyButton").onclick = onMultiplyButtonClicked;
 
-    document.getElementById("divideButton.onclick").onclick = onDivideButtonClicked;
+    document.getElementById("divideButton").onclick = onDivideButtonClicked;
 
     document.getElementById("clearButton").onclick = onClearButtonClicked;
     
