@@ -10,16 +10,16 @@ function init() {
     number1Field = document.getElementById("number1Field");
     number2Field = document.getElementById("number2Field");
 
-    // document.getElementById("addButton").onclick = onAddButtonClicked;
-    addButton.onclick = onAddButtonClicked;
+    document.getElementById("addButton").onclick = onAddButtonClicked;
+    // addButton.onclick = onAddButtonClicked;   --it works but older versions of web browsers might not read it
     
-    subtractButton.onclick = onSubtractButtonClicked;
+    document.getElementById("subtractButton").onclick = onSubtractButtonClicked;
    
-    multiplyButton.onclick = onMultiplyButtonClicked;
+    document.getElementById("multiplyButton.onclick").onclick = onMultiplyButtonClicked;
 
-    divideButton.onclick = onDivideButtonClicked;
+    document.getElementById("divideButton.onclick").onclick = onDivideButtonClicked;
 
-    clearButton.onclick = onClearButtonClicked;
+    document.getElementById("clearButton").onclick = onClearButtonClicked;
     
 }
 
