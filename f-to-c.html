@@ -16,12 +16,12 @@
           <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Simple Calculator
-                  <span class="visually-hidden">(current)</span>
-                </a>
+                <a class="nav-link" href="calculator.html">Simple Calculator</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="f-to-c.html">Fahrenheit to Celsius</a>
+                <a class="nav-link active" href="f-to-c.html">Fahrenheit to Celsius
+                    <span class="visually-hidden">(current)</span>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="c-to-f.html">Celsius to Fahrenheit</a>
@@ -39,33 +39,24 @@
         </div>
       </nav>
 
-    <main class="container mt-5 d-flex justify-content-center">
-        <form action="index.html" class="text-center p-4 border border-dark-subtle">
-            <div class="form-group m-3" >
-                <label for="number1Field">Number 1:</label>
-                <input type="text" id="number1Field" value="" class="ms-2">
-            </div>
+    <h1 class="m-5 text-center"> Fahrenheit to Celsius </h1>
 
-            <div class="form-group m-3">
-                <label for="number2Field">Number 2:</label>
-                <input type="text" id="number2Field" value="" class="ms-2">
-            </div>
+    <main class="container mt-5">
+        <div class="form-floating mt-4">
+            <input type="text" id="fahrenheit" class="form-control" name="fahrenheit" placeholder="Fahrenheit">
+            <label for="fahrenheit">Fahrenheit</label>
+        </div>
 
-            <div class="form-group m-3">
-                <input type="button" id="addButton" value="Add">
-                <input type="button" id="subtractButton" value="Subtract">
-                <input type="button" id="multiplyButton" value="Multiply">
-                <input type="button" id="divideButton" value="Divide">
-            </div>
+        <div>
+            <input type="button" id="convertButton" class="btn btn-success p-3 m-3 col-2" value="Convert">
+            <input type="button" id="clearButton" class="btn btn-warning p-3 m-3 col-2" value="Clear">
+        </div>
+        
 
-            <div class="form-group m-3">
-                <label for="answerField">Answer:</label>
-                <input type="text" id="answerField" value="" class="ms-2" readonly>
-            </div>
-
-            <input type="button" id="clearButton" value="Clear">
-
-        </form>
+        <div>
+            <label for="celsius"> Celsius: </label>
+            <input type="text" id="celsius" class="form-control p-3" name="celsius" readonly disabled>
+        </div>
     </main>
 
     <script src="scripts/calculator.js"></script>
